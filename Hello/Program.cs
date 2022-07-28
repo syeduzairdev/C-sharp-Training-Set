@@ -8,6 +8,12 @@ namespace Hello
 {
     internal class Program
     {
+        //function baanaya h mene ye
+        static void Greet()
+            {
+                Console.WriteLine("new function");
+            }
+
         static void Main(string[] args)
         {
             //we use /n for new line 
@@ -161,29 +167,119 @@ Console.WriteLine("------------------------Math Library-------------------------
             
             
 Console.WriteLine("------------------------Conditions/Statements/Decision Control--------------------------------------");
-            //if-else Stamements
+            //if-else Stamements for checking conditions
             Console.WriteLine("---if-else Stamements--------");
             int sameer=21;
-            if(sameer>18){
-                Console.WriteLine("you are adult");
+            if(sameer<1||2==2){ 
+            Console.WriteLine("you are born");
+            }
+            else if (sameer>18||2!=2){
+            Console.WriteLine("you are adult");
             }
             else
             {
-                Console.WriteLine("you are child");
+            Console.WriteLine("you are child");
             }
 
 
+            //Switch Staments for checking conditions
+            Console.WriteLine("---Switch Staments---");
+
+            int swt=20;
+            switch (swt)
+            {
+                case 18:
+                    Console.WriteLine("please wait");
+                    break;
+                case 19:
+                    Console.WriteLine("you are 19");
+                    break;
+                default:
+                    Console.WriteLine("Enjoy");
+                    break;
+            }
 
 
+Console.WriteLine("------------------------lOOPS----------------------------------");
+            //Loops
+            //execution speed sb ki brabar ha
 
 
+            //1. While loop
+            //pehle condition chk krega phr iteration krega
+            //or while tbh chalega jb condition true hogi warna nh chalega
+
+            Console.WriteLine("---While---");
+            int v=0;
+            while (v < 10)
+            {
+                Console.WriteLine(v);
+                v++;
+            }
+
+            //2.Do While loop
+            //pehle iteration krega phr condition chk krega
+            //ye kam s kam ek bar chalta h
+
+            Console.WriteLine("---Do While---");
+            int dio= 0;
+            do{
+                Console.WriteLine(dio+1);
+                dio++;
+            } while(dio<5);
 
 
-Console.WriteLine("------------------------Practice Sets of fabionacci series--------------------------------------");
-            //fabionacci series
+            //3. For loop
+            //
+            Console.WriteLine("---For---");
+            for(int fo=0; fo<10; fo++)
+            {
+                Console.WriteLine(fo);
+            }
+
+            //Break and Continue
+            
+            //break: Leave this loop forever.
+            //break mtlb tordo or agar ye kisi loop m, laga hoga to us loop ki iteration chalegi
+            //or jesiii break ayega tw loop break hojaega khtm hojaega
+            
+            Console.WriteLine("---Break in loop---");
+            for(int foo=0; foo<10; foo++)
+            {
+                Console.WriteLine(foo);
+                break;
+            }
+
+
+            //Continue
+            //Continue: Leave this particular iteration of the loop.
+            //Continue mtlb mere ni9che jo bh h usse ignore kro or new iteration chalao
+
+            Console.WriteLine("---Continue in loop---");
+            for(int fto=0; fto<10; fto++)
+            {
+                if (fto == 0)
+                {
+                    continue;
+                }
+                Console.WriteLine(fto);
+            }
+
+Console.WriteLine("------------------------Methods/Function--------------------------------------");
+            //Mehtods means Function or hum function q banate h??
+            //har hume jaga jaga same same kam krna h tw hum erepeat nh krna parega simple uska func bana k use krlege 
+
+            Console.WriteLine("---Function---");
+            //make on line 11 and call here
+            Greet();
+            
+
+Console.WriteLine("------------------------Practice Sets--------------------------------------");
+            //fabionacci series using while loop
 
             //while loop for for decision making loop first you have condition then iterate
-
+           
+            Console.WriteLine("---fabionacci series---");
             int aee=0;
             int bee=1;
             int cee=0;
@@ -199,9 +295,81 @@ Console.WriteLine("------------------------Practice Sets of fabionacci series---
 
 
 
+            
+
+
+            //Even No using if else statements
+            Console.WriteLine("---Even No.---");
+            int even=10045;
+            if(even%2==0)
+            {
+                Console.WriteLine("even");
+            }
+            else
+            {
+                Console.WriteLine("odd");
+            }
+
+
+            //specified operations
+            Console.WriteLine("---specified operations---");
+            Console.WriteLine(2 + 15 / 6 * 1 - 7 % 2);
 
 
 
+            //swap two numbers
+            Console.WriteLine("---swap two numbers---");
+            int xxx=2;
+            int yyy=5;
+            int swap=xxx;
+             xxx=yyy;
+             yyy=swap;
+            Console.WriteLine(xxx);
+            Console.WriteLine(yyy);
+
+
+            //multiplication of three numbers
+            Console.WriteLine("---multiplication of three numbers--------");
+            int mul1=3;
+            int mul2=5;
+            int mul3=8;
+            Console.WriteLine(mul1*mul2*mul3);
+            Console.WriteLine((mul1+mul2)*mul3);
+            Console.WriteLine(mul1*mul2+mul3*mul2);
+
+
+
+            //Table of 2 using foor loop
+            Console.WriteLine("---Table of 2--------");
+            int num=10;
+            int table=4;
+            for (int i=1;i<=num;i++){
+                Console.WriteLine(table*i);
+            }
+
+
+
+            //age elder or smaller
+            Console.WriteLine("---age elder or smaller--------");
+            int agee=19;
+            if (agee > 20){
+            Console.WriteLine("You look older than 20");
+            }
+            else
+            {
+            Console.WriteLine("You look smaller rhan 20");
+
+            }
+            
+
+
+
+
+
+
+
+            //swap two numbers
+            Console.WriteLine("---swap two numbers--------");
             //Read to commandline 
             Console.ReadLine();
         }
