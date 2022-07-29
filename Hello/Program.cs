@@ -230,7 +230,7 @@ Console.WriteLine("------------------------lOOPS--------------------------------
 
 
             //3. For loop
-            //
+            
             Console.WriteLine("---For---");
             for(int fo=0; fo<10; fo++)
             {
@@ -299,6 +299,7 @@ Console.WriteLine("------------------------Practice Sets------------------------
 
 
             //Even No using if else statements
+            //using if else statement
             Console.WriteLine("---Even No.---");
             int even=10045;
             if(even%2==0)
