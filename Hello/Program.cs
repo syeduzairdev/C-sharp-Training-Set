@@ -330,7 +330,7 @@ Console.WriteLine("------------------------Practice Sets------------------------
 
 
             //multiplication of three numbers
-            Console.WriteLine("---multiplication of three numbers--------");
+            Console.WriteLine("---multiplication of three numbers---");
             int mul1=3;
             int mul2=5;
             int mul3=8;
@@ -341,7 +341,7 @@ Console.WriteLine("------------------------Practice Sets------------------------
 
 
             //Table of 2 using foor loop
-            Console.WriteLine("---Table of 2--------");
+            Console.WriteLine("---Table of 2---");
             int num=10;
             int table=4;
             for (int i=1;i<=num;i++){
@@ -351,7 +351,7 @@ Console.WriteLine("------------------------Practice Sets------------------------
 
 
             //age elder or smaller
-            Console.WriteLine("---age elder or smaller--------");
+            Console.WriteLine("---age elder or smaller---");
             int agee=19;
             if (agee > 20){
             Console.WriteLine("You look older than 20");
@@ -369,8 +369,18 @@ Console.WriteLine("------------------------Practice Sets------------------------
 
 
 
-            //swap two numbers
-            Console.WriteLine("---swap two numbers--------");
+            //Paramid
+            Console.WriteLine("---Paramid---");
+
+            for(int i=0;i<5;i++){
+                for(int j = 0; j < 5; j++)
+                {
+                    Console.WriteLine(i+j);
+                }
+                }
+
+
+
             //Read to commandline 
             Console.ReadLine();
         }
